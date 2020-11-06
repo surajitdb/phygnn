@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>phygnn.model_interfaces.random_forest_model module &mdash; phygnn 0.0.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="phygnn.model_interfaces.tf_model module" href="phygnn.model_interfaces.tf_model.html" />
+    <link rel="prev" title="phygnn.model_interfaces.phygnn_model module" href="phygnn.model_interfaces.phygnn_model.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> phygnn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="phygnn.html">phygnn package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="phygnn.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="phygnn.model_interfaces.html">phygnn.model_interfaces package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="phygnn.model_interfaces.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="phygnn.utilities.html">phygnn.utilities package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="phygnn.utilities.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phygnn.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phygnn.phygnn.html">phygnn.phygnn module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="phygnn.version.html">phygnn.version module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">phygnn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="phygnn.html">phygnn package</a> &raquo;</li>
+        
+          <li><a href="phygnn.model_interfaces.html">phygnn.model_interfaces package</a> &raquo;</li>
+        
+      <li>phygnn.model_interfaces.random_forest_model module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nrel/phygnn/blob/master/docs/source/phygnn/phygnn.model_interfaces.random_forest_model.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-phygnn.model_interfaces.random_forest_model">
+<span id="phygnn-model-interfaces-random-forest-model-module"></span><h1>phygnn.model_interfaces.random_forest_model module<a class="headerlink" href="#module-phygnn.model_interfaces.random_forest_model" title="Permalink to this headline">¶</a></h1>
+<p>Random Forest Model</p>
+<dl class="py class">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel">
+<em class="property">class </em><code class="sig-prename descclassname">phygnn.model_interfaces.random_forest_model.</code><code class="sig-name descname">RandomForestModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">feature_names</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">label_name</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">norm_params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="phygnn.model_interfaces.base_model.html#phygnn.model_interfaces.base_model.ModelBase" title="phygnn.model_interfaces.base_model.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">phygnn.model_interfaces.base_model.ModelBase</span></code></a></p>
+<p>scikit learn Random Forest Regression model interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>sklearn.ensemble.RandomForestRegressor</em>) – Sklearn Random Forest Model</p></li>
+<li><p><strong>feature_names</strong> (<em>list</em>) – Ordered list of feature names.</p></li>
+<li><p><strong>label_name</strong> (<em>str</em>) – label (output) variable name.</p></li>
+<li><p><strong>norm_params</strong> (<em>dict, optional</em>) – Dictionary mapping feature and label names (keys) to normalization
+parameters (mean, stdev), by default None</p></li>
+<li><p><strong>normalize</strong> (<em>bool | tuple, optional</em>) – Boolean flag(s) as to whether features and labels should be
+normalized. Possible values:
+- True means normalize both
+- False means don’t normalize either
+- Tuple of flags (normalize_feature, normalize_label)
+by default True</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel.compile_model">
+<em class="property">static </em><code class="sig-name descname">compile_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel.compile_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel.compile_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build sklearn random forest model</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>kwargs</strong> (<em>dict</em>) – kwargs for sklearn.ensemble.RandomForestRegressor</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>sklearn.ensemble.RandomForestRegressor</em> – sklearn random forest model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel.unnormalize_prediction">
+<code class="sig-name descname">unnormalize_prediction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">prediction</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel.unnormalize_prediction"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel.unnormalize_prediction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unnormalize prediction if needed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>prediction</strong> (<em>ndarray</em>) – Model prediction</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>prediction</strong> (<em>ndarray</em>) – Native prediction</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel.train_model">
+<code class="sig-name descname">train_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">features</span></em>, <em class="sig-param"><span class="n">label</span></em>, <em class="sig-param"><span class="n">parse_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fit_kwargs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel.train_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel.train_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the model with the provided features and label</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>features</strong> (<em>dict | pandas.DataFrame</em>) – Input features to train on</p></li>
+<li><p><strong>label</strong> (<em>dict | pandas.DataFrame</em>) – label to train on</p></li>
+<li><p><strong>parse_kwargs</strong> (<em>dict</em>) – kwargs for cls._parse_features</p></li>
+<li><p><strong>fit_kwargs</strong> (<em>dict</em>) – kwargs for sklearn.ensemble.RandomForestRegressor.fit</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel.save_model">
+<code class="sig-name descname">save_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel.save_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel.save_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save Random Forest Model to path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – Path to save model to</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel.build_trained">
+<em class="property">classmethod </em><code class="sig-name descname">build_trained</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">features</span></em>, <em class="sig-param"><span class="n">label</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">save_path</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">compile_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">parse_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fit_kwargs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel.build_trained"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel.build_trained" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build Random Forest Model with given kwargs and then train with
+given features, labels, and kwargs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>features</strong> (<em>pandas.DataFrame</em>) – Model features</p></li>
+<li><p><strong>label</strong> (<em>pandas.DataFrame</em>) – label to train on</p></li>
+<li><p><strong>normalize</strong> (<em>bool | tuple, optional</em>) – Boolean flag(s) as to whether features and labels should be
+normalized. Possible values:
+- True means normalize both
+- False means don’t normalize either
+- Tuple of flags (normalize_feature, normalize_label)
+by default True</p></li>
+<li><p><strong>save_path</strong> (<em>str</em>) – Directory path to save model to. The RandomForest Model will be
+saved to the directory while the framework parameters will be
+saved in json.</p></li>
+<li><p><strong>compile_kwargs</strong> (<em>dict</em>) – kwargs for sklearn.ensemble.RandomForestRegressor</p></li>
+<li><p><strong>parse_kwargs</strong> (<em>dict</em>) – kwargs for cls._parse_features</p></li>
+<li><p><strong>fit_kwargs</strong> (<em>dict</em>) – kwargs for sklearn.ensemble.RandomForestRegressor.fit</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>model</strong> (<em>RandomForestModel</em>) – Initialized and trained RandomForestModel obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.random_forest_model.RandomForestModel.load">
+<em class="property">classmethod </em><code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/random_forest_model.html#RandomForestModel.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.random_forest_model.RandomForestModel.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load model from model path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – Directory path to RandomForestModel from pickle file.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>model</strong> (<em>RandomForestModel</em>) – Loaded RandomForestModel from disk.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="phygnn.model_interfaces.tf_model.html" class="btn btn-neutral float-right" title="phygnn.model_interfaces.tf_model module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="phygnn.model_interfaces.phygnn_model.html" class="btn btn-neutral float-left" title="phygnn.model_interfaces.phygnn_model module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Alliance for Sustainable Energy, LLC
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

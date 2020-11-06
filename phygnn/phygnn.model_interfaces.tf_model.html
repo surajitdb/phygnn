@@ -1,0 +1,481 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>phygnn.model_interfaces.tf_model module &mdash; phygnn 0.0.4 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="phygnn.utilities package" href="phygnn.utilities.html" />
+    <link rel="prev" title="phygnn.model_interfaces.random_forest_model module" href="phygnn.model_interfaces.random_forest_model.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> phygnn
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.4
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="phygnn.html">phygnn package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="phygnn.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="phygnn.model_interfaces.html">phygnn.model_interfaces package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="phygnn.model_interfaces.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="phygnn.utilities.html">phygnn.utilities package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="phygnn.utilities.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="phygnn.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="phygnn.phygnn.html">phygnn.phygnn module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="phygnn.version.html">phygnn.version module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">phygnn</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="phygnn.html">phygnn package</a> &raquo;</li>
+        
+          <li><a href="phygnn.model_interfaces.html">phygnn.model_interfaces package</a> &raquo;</li>
+        
+      <li>phygnn.model_interfaces.tf_model module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/nrel/phygnn/blob/master/docs/source/phygnn/phygnn.model_interfaces.tf_model.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-phygnn.model_interfaces.tf_model">
+<span id="phygnn-model-interfaces-tf-model-module"></span><h1>phygnn.model_interfaces.tf_model module<a class="headerlink" href="#module-phygnn.model_interfaces.tf_model" title="Permalink to this headline">¶</a></h1>
+<p>TensorFlow Model</p>
+<dl class="py class">
+<dt id="phygnn.model_interfaces.tf_model.TfModel">
+<em class="property">class </em><code class="sig-prename descclassname">phygnn.model_interfaces.tf_model.</code><code class="sig-name descname">TfModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span></em>, <em class="sig-param"><span class="n">feature_names</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">label_names</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">norm_params</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">normalize</span><span class="o">=</span><span class="default_value">(True, False)</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="phygnn.model_interfaces.base_model.html#phygnn.model_interfaces.base_model.ModelBase" title="phygnn.model_interfaces.base_model.ModelBase"><code class="xref py py-class docutils literal notranslate"><span class="pre">phygnn.model_interfaces.base_model.ModelBase</span></code></a></p>
+<p>TensorFlow Keras Model interface</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> (<em>tensorflow.keras.models.Sequential</em>) – Tensorflow Keras Model</p></li>
+<li><p><strong>feature_names</strong> (<em>list</em>) – Ordered list of feature names.</p></li>
+<li><p><strong>label_names</strong> (<em>list</em>) – Ordered list of label (output) names.</p></li>
+<li><p><strong>norm_params</strong> (<em>dict, optional</em>) – Dictionary mapping feature and label names (keys) to normalization
+parameters (mean, stdev), by default None</p></li>
+<li><p><strong>normalize</strong> (<em>bool | tuple, optional</em>) – Boolean flag(s) as to whether features and labels should be
+normalized. Possible values:
+- True means normalize both
+- False means don’t normalize either
+- Tuple of flags (normalize_feature, normalize_label)
+by default True</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.layers">
+<em class="property">property </em><code class="sig-name descname">layers</code><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.layers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model layers</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><em>list</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.weights">
+<em class="property">property </em><code class="sig-name descname">weights</code><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of layer weights for gradient calculations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><em>list</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.kernel_weights">
+<em class="property">property </em><code class="sig-name descname">kernel_weights</code><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.kernel_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of the NN kernel weights (tensors)</p>
+<p>(can be used for kernel regularization).</p>
+<p>Does not include input layer or dropout layers.
+Does include the output layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><em>list</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.bias_weights">
+<em class="property">property </em><code class="sig-name descname">bias_weights</code><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.bias_weights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of the NN bias weights (tensors)</p>
+<p>(can be used for bias regularization).</p>
+<p>Does not include input layer or dropout layers.
+Does include the output layer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><em>list</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.history">
+<em class="property">property </em><code class="sig-name descname">history</code><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model training history DataFrame (None if not yet trained)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><em>pandas.DataFrame | None</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.compile_model">
+<em class="property">static </em><code class="sig-name descname">compile_model</code><span class="sig-paren">(</span><em class="sig-param">n_features</em>, <em class="sig-param">n_labels=1</em>, <em class="sig-param">hidden_layers=None</em>, <em class="sig-param">learning_rate=0.001</em>, <em class="sig-param">loss='mean_squared_error'</em>, <em class="sig-param">metrics=('mae'</em>, <em class="sig-param">'mse')</em>, <em class="sig-param">optimizer_class=&lt;class 'tensorflow.python.keras.optimizer_v2.adam.Adam'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel.compile_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.compile_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build tensorflow sequential model from given layers and kwargs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>n_features</strong> (<em>int</em>) – Number of features (inputs) to train the model on</p></li>
+<li><p><strong>n_labels</strong> (<em>int, optional</em>) – Number of labels (outputs) to the model, by default 1</p></li>
+<li><p><strong>hidden_layers</strong> (<em>list, optional</em>) – List of tensorflow layers.Dense kwargs (dictionaries)
+if None use a single linear layer, by default None</p></li>
+<li><p><strong>learning_rate</strong> (<em>float, optional</em>) – tensorflow optimizer learning rate, by default 0.001</p></li>
+<li><p><strong>loss</strong> (<em>str, optional</em>) – name of objective function, by default “mean_squared_error”</p></li>
+<li><p><strong>metrics</strong> (<em>list, optional</em>) – List of metrics to be evaluated by the model during training and
+testing, by default (‘mae’, ‘mse’)</p></li>
+<li><p><strong>optimizer_class</strong> (<em>tf.keras.optimizers, optional</em>) – Optional explicit request of optimizer. This should be a class
+that will be instantated in the TfModel._compile_model() method
+The default is the Adam optimizer</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – kwargs for tensorflow.keras.models.compile</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><em>tensorflow.keras.models.Sequential</em> – Compiled tensorflow Sequential model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.train_model">
+<code class="sig-name descname">train_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">features</span></em>, <em class="sig-param"><span class="n">labels</span></em>, <em class="sig-param"><span class="n">epochs</span><span class="o">=</span><span class="default_value">100</span></em>, <em class="sig-param"><span class="n">validation_split</span><span class="o">=</span><span class="default_value">0.2</span></em>, <em class="sig-param"><span class="n">early_stop</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">parse_kwargs</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">fit_kwargs</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel.train_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.train_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train the model with the provided features and label</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>features</strong> (<em>dict | pandas.DataFrame</em>) – Input features to train on</p></li>
+<li><p><strong>labels</strong> (<em>dict | pandas.DataFrame</em>) – label to train on</p></li>
+<li><p><strong>norm_labels</strong> (<em>bool, optional</em>) – Flag to normalize label, by default True</p></li>
+<li><p><strong>epochs</strong> (<em>int, optional</em>) – Number of epochs to train the model, by default 100</p></li>
+<li><p><strong>validation_split</strong> (<em>float, optional</em>) – Fraction of the training data to be used as validation data,
+by default 0.2</p></li>
+<li><p><strong>early_stop</strong> (<em>bool</em>) – Flag to stop training when it stops improving</p></li>
+<li><p><strong>parse_kwargs</strong> (<em>dict</em>) – kwargs for cls._parse_features</p></li>
+<li><p><strong>fit_kwargs</strong> (<em>dict</em>) – kwargs for tensorflow.keras.models.fit</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.save_model">
+<code class="sig-name descname">save_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel.save_model"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.save_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save TfModel to path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – Directory path to save model to. The tensorflow model will be
+saved to the directory while the framework parameters will be
+saved in json.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.build">
+<em class="property">classmethod </em><code class="sig-name descname">build</code><span class="sig-paren">(</span><em class="sig-param">feature_names</em>, <em class="sig-param">label_names</em>, <em class="sig-param">normalize=(True</em>, <em class="sig-param">False)</em>, <em class="sig-param">hidden_layers=None</em>, <em class="sig-param">learning_rate=0.001</em>, <em class="sig-param">loss='mean_squared_error'</em>, <em class="sig-param">metrics=('mae'</em>, <em class="sig-param">'mse')</em>, <em class="sig-param">optimizer_class=&lt;class 'tensorflow.python.keras.optimizer_v2.adam.Adam'&gt;</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel.build"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build tensorflow sequential model from given features, layers and
+kwargs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_names</strong> (<em>list</em>) – Ordered list of feature names.</p></li>
+<li><p><strong>label_names</strong> (<em>list</em>) – Ordered list of label (output) names.</p></li>
+<li><p><strong>normalize</strong> (<em>bool | tuple, optional</em>) – Boolean flag(s) as to whether features and labels should be
+normalized. Possible values:
+- True means normalize both
+- False means don’t normalize either
+- Tuple of flags (normalize_feature, normalize_label)
+by default True</p></li>
+<li><p><strong>hidden_layers</strong> (<em>list, optional</em>) – List of tensorflow layers.Dense kwargs (dictionaries)
+if None use a single linear layer, by default None</p></li>
+<li><p><strong>learning_rate</strong> (<em>float, optional</em>) – tensorflow optimizer learning rate, by default 0.001</p></li>
+<li><p><strong>loss</strong> (<em>str, optional</em>) – name of objective function, by default “mean_squared_error”</p></li>
+<li><p><strong>metrics</strong> (<em>list, optional</em>) – List of metrics to be evaluated by the model during training and
+testing, by default (‘mae’, ‘mse’)</p></li>
+<li><p><strong>optimizer_class</strong> (<em>tf.keras.optimizers, optional</em>) – Optional explicit request of optimizer. This should be a class
+that will be instantated in the TfModel._compile_model() method
+The default is the Adam optimizer</p></li>
+<li><p><strong>kwargs</strong> (<em>dict</em>) – kwargs for tensorflow.keras.models.compile</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>model</strong> (<em>TfModel</em>) – Initialized TfModel obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.build_trained">
+<em class="property">classmethod </em><code class="sig-name descname">build_trained</code><span class="sig-paren">(</span><em class="sig-param">features</em>, <em class="sig-param">labels</em>, <em class="sig-param">normalize=(True</em>, <em class="sig-param">False)</em>, <em class="sig-param">hidden_layers=None</em>, <em class="sig-param">learning_rate=0.001</em>, <em class="sig-param">loss='mean_squared_error'</em>, <em class="sig-param">metrics=('mae'</em>, <em class="sig-param">'mse')</em>, <em class="sig-param">optimizer_class=&lt;class 'tensorflow.python.keras.optimizer_v2.adam.Adam'&gt;</em>, <em class="sig-param">epochs=100</em>, <em class="sig-param">validation_split=0.2</em>, <em class="sig-param">early_stop=True</em>, <em class="sig-param">save_path=None</em>, <em class="sig-param">compile_kwargs=None</em>, <em class="sig-param">parse_kwargs=None</em>, <em class="sig-param">fit_kwargs=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel.build_trained"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.build_trained" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build tensorflow sequential model from given features, layers and
+kwargs and then train with given label and kwargs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>features</strong> (<em>dict | pandas.DataFrame</em>) – Model features</p></li>
+<li><p><strong>labels</strong> (<em>dict | pandas.DataFrame</em>) – label to train on</p></li>
+<li><p><strong>normalize</strong> (<em>bool | tuple, optional</em>) – Boolean flag(s) as to whether features and labels should be
+normalized. Possible values:
+- True means normalize both
+- False means don’t normalize either
+- Tuple of flags (normalize_feature, normalize_label)
+by default True</p></li>
+<li><p><strong>hidden_layers</strong> (<em>list, optional</em>) – List of tensorflow layers.Dense kwargs (dictionaries)
+if None use a single linear layer, by default None</p></li>
+<li><p><strong>learning_rate</strong> (<em>float, optional</em>) – tensorflow optimizer learning rate, by default 0.001</p></li>
+<li><p><strong>loss</strong> (<em>str, optional</em>) – name of objective function, by default “mean_squared_error”</p></li>
+<li><p><strong>metrics</strong> (<em>list, optional</em>) – List of metrics to be evaluated by the model during training and
+testing, by default (‘mae’, ‘mse’)</p></li>
+<li><p><strong>optimizer_class</strong> (<em>tf.keras.optimizers, optional</em>) – Optional explicit request of optimizer. This should be a class
+that will be instantated in the TfModel._compile_model() method
+The default is the Adam optimizer</p></li>
+<li><p><strong>epochs</strong> (<em>int, optional</em>) – Number of epochs to train the model, by default 100</p></li>
+<li><p><strong>validation_split</strong> (<em>float, optional</em>) – Fraction of the training data to be used as validation data,
+by default 0.2</p></li>
+<li><p><strong>early_stop</strong> (<em>bool</em>) – Flag to stop training when it stops improving</p></li>
+<li><p><strong>save_path</strong> (<em>str</em>) – Directory path to save model to. The tensorflow model will be
+saved to the directory while the framework parameters will be
+saved in json.</p></li>
+<li><p><strong>compile_kwargs</strong> (<em>dict</em>) – kwargs for tensorflow.keras.models.compile</p></li>
+<li><p><strong>parse_kwargs</strong> (<em>dict</em>) – kwargs for cls._parse_features</p></li>
+<li><p><strong>fit_kwargs</strong> (<em>dict</em>) – kwargs for tensorflow.keras.models.fit</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>model</strong> (<em>TfModel</em>) – Initialized and trained TfModel obj</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="phygnn.model_interfaces.tf_model.TfModel.load">
+<em class="property">classmethod </em><code class="sig-name descname">load</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/phygnn/model_interfaces/tf_model.html#TfModel.load"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#phygnn.model_interfaces.tf_model.TfModel.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load model from model path.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>str</em>) – Directory path to TfModel to load model from. There should be a
+tensorflow saved model directory with a parallel pickle file for
+the TfModel framework.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>model</strong> (<em>TfModel</em>) – Loaded TfModel from disk.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="phygnn.utilities.html" class="btn btn-neutral float-right" title="phygnn.utilities package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="phygnn.model_interfaces.random_forest_model.html" class="btn btn-neutral float-left" title="phygnn.model_interfaces.random_forest_model module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Alliance for Sustainable Energy, LLC
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
